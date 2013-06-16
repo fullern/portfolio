@@ -4,15 +4,59 @@
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0" />
 <title>Nick's compendium of meh</title>
+<!-- <link rel="stylesheet" href="css/colorbox.css" /> -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
 <link href="css/fuller_wk3.css" type="text/css" rel="stylesheet" media="screen" />
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="/easybox/easybox.min.js"></script>
-<script type="text/javascript" src="/easybox/handlers.min.js"></script>
-<script type="text/javascript" src="/easybox/extras/autoload.min.js"></script>
 
-<link rel="stylesheet" href="/easybox/styles/default/easybox.min.css" type="text/css" media="screen" />
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+
+<!-- Fancybox-->
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+
+<!-- helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox').fancybox();
+            // Change title type, overlay closing speed
+            $(".fancybox").fancybox({
+
+                padding: 0,
+
+                closeEffect : 'elastic',
+                helpers: {
+                    title : {
+                        type : 'outside'
+                    },
+                    thumbs : {
+                        width  : 50,
+                        height : 50
+                    }
+                }
+            });
+
+        });
+    </script>
+
+
+<!-- -->
 
 <link rel="stylesheet" href="font/stylesheet.css" type="text/css" charset="utf-8">
 
@@ -47,7 +91,7 @@
             <p>I guess this is what I should refer to as a portfolio, but to me it is just a few things I have created/designed/whatever and happen to enjoy. I've worked on countless other things throughout the past, but I can only ever fit so much..</p>
             <ul class="mainportfolio">
             	<li>
-                    <a href="images/work/bbhaven.png"  title="Image caption" class="lightbox">
+                    <a href="images/work/bbhaven.png" target="_blank" rel="gallery" title="Image 1" class="fancybox">
                         <img src="images/work/bbhaven.png">
                     </a>
                     <h3>
@@ -59,7 +103,7 @@
 
                 </li>
                 <li>
-                    <a href="#"  class="lightview">
+                    <a href="http://sinfest.net/comikaze/comics/2013-06-16.gif"  rel="gallery"  title="Image 2" rel="group" class="fancybox">
                         <img src="http://www.fillmurray.com/g/300/250">
                     </a>
                     <h3>
@@ -71,7 +115,7 @@
 
                 </li>
                 <li>
-                    <a href="#" class="lightview">
+                    <a href="#" title="Image 1" class="lightbox" data-group="gallery1">
                         <img src="http://www.placekitten.com/g/300/250">
                     </a>
                     <h3>
@@ -83,7 +127,7 @@
 
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" title="Image 1" class="lightbox" data-group="gallery1">
                         <img src="http://www.placecage.com/300/250">
                     </a>
                     <h3>
@@ -95,7 +139,7 @@
 
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" title="Image 1" class="lightbox" data-group="gallery1">
                         <img src="http://www.placekitten.com/300/250">
                     </a>
                     <h3>
@@ -107,7 +151,7 @@
 
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" title="Image 1" class="lightbox" data-group="gallery1">
                         <img src="http://www.fillmurray.com/300/250">
                     </a>
                     <h3>
@@ -123,27 +167,27 @@
             <div class="sliderwrap">
                 <ul class="miniportfolio">
                 	<li>
-                        <a href="#">
+                        <a href="#" title="Blueberry Haven Magento site" class="group3">
                             <img src="http://www.placekitten.com/180/140">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" title="Blueberry Haven Magento site" class="group3">
                             <img src="http://www.fillmurray.com/180/140">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" title="Blueberry Haven Magento site" class="group3">
                             <img src="http://www.placecage.com/180/140">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" title="Blueberry Haven Magento site" class="group3">
                             <img src="http://www.fillmurray.com/180/140">
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" title="Blueberry Haven Magento site" class="group3">
                             <img src="http://www.fillmurray.com/180/140">
                         </a>
                     </li>
@@ -158,9 +202,7 @@
         <section role="about">
         	<h1>about</h1> 
             <p>I find describing myself quite difficult and usually awkward hopefully some of can help paint a picture.</p>
-             
             <h2>Who am I</h2>
-
             <p>I am employed as a Creative Director at <a href="http://www.bevelwise.com" target="_blank">Bevelwise</a>. When I'm not designing/directing creative/etc there I am usually home attempting ato manage a herd of 3 dogs, tinkering with something, reading, or trying to build or play guitars. I enjoy all manners of tecnobabble, nerdiness, and everything that is probably more complicated than I first imagine.</p> 
 
             <aside class="social">
